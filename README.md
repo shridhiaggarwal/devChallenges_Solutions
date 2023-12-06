@@ -1,4 +1,4 @@
-# <img src="./images/devchallenges-logo.svg.png"> devChallenges Solutions
+# <img src="./images/devchallenges-logo.svg"> devChallenges Solutions
 
 devChallenges Website - https://devchallenges.io/
 
