@@ -1,7 +1,75 @@
 body {
   height: 100%;
-  margin: 0px;
-  background-color: var(--dark-jungle-green);
+  background-color: var(--lotion);
   font-family: "Roboto", sans-serif;
-  color: var(--platinum);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.headerImage {
+  width: 50px;
+  height: 50px;
+}
+
+.headerTitle {
+  margin-left: 16px;
+  color: var(--dark-gray);
+}
+
+.card {
+  display: flex;
+  border: 1px solid var(--steel-blue-gray);
+  border-radius: 12px;
+  background-color: var(--white);
+  margin: 32px;
+  padding: 16px;
+}
+
+.cardImage {
+  width: 500px;
+  border: 1px solid var(--steel-blue-gray);
+  border-radius: 12px;
+  margin-right: 32px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  color: var(--dark-gray);
+  padding: 0px 0px 16px 0px;
+}
+
+.cardDescription {
+  color: var(--charcoal-gray);
+  padding: 0px 0px 8px 0px;
+}
+
+.cardTechnology {
+  color: var(--charcoal-gray);
+  padding: 0px 0px 48px 0px;
+}
+
+.cardLink {
+  color: var(--white);
+  background-color: var(--charcoal-gray);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 32px 0px;
 }

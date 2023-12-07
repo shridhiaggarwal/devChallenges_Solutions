@@ -5,15 +5,16 @@
   /* colors - scrollbar theme*/
   --scroll-bar-color: #b0b0b0;
   --scroll-bar-bg-color: #171c28;
-  /* colors - dark theme*/
-  --dark-jungle-green: #171c28;
-  --yinmn-blue: #2e538f;
-  --platinum: #e7e7e7;
-  --cadet-blue: #afafbf;
-  --dark-cornflower-blue: #1e407f;
+  /* colors - theme*/
+  --dark-gray: #333333;
+  --charcoal-gray: #555555;
+  --slate-gray: #666666;
+  --steel-blue-gray: #c1ccd6;
+  --lotion: #fafaf9;
+  --white: #ffffff;
 }
 
-/* page start - 2.5 rem - 40px
+/* page start - 2 rem - 32px
   page section title - 2rem - 32px
   page section subheading - 1.5rem - 24px
   page normal text - 1.125rem - 18px */
