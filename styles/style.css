@@ -63,13 +63,18 @@ main{
   padding: 0px 0px 48px 0px;
 }
 
+.cardLinks{
+  display: flex;
+}
+
 .cardLink {
   color: var(--white);
   background-color: var(--charcoal-gray);
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 12px 24px;
   border-radius: 12px;
   text-align: center;
+  margin: 0px 16px 0px 0px;
 }
 
 footer {
