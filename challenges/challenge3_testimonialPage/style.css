@@ -1,0 +1,109 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafaf9;
+}
+
+.leftSide{
+    width: 550px;
+    margin-right: 60px;
+}
+
+.reviewSection {
+  display: flex;
+  margin-top: 160px;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
+.starCircle {
+  background-color: #f5c044;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starCircle img{
+    width: 22px;
+    height: 22px;
+}
+
+.reviewHeading {
+  font-family: "Sora", sans-serif;
+  font-size: 2.25rem;
+  color: #18181b;
+  margin-top: 20px;
+}
+
+.reviewSubheading {
+  font-family: "Sora", sans-serif;
+  font-size: 1.25rem;
+  color: #52525a;
+  margin-top: 24px;
+  line-height: 36px;
+}
+
+.checklist{
+    margin-top: 40px;
+    list-style: none;
+}
+
+.checklistItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.checklistItem p{
+  font-family: "Sora", sans-serif;
+  font-size: 0.875rem;
+  color: #52525a;
+  margin-left: 12px;
+}
+
+.rightSide{
+    margin-top: 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 280px;
+  padding: 28px 38px;
+  border-radius: 16px;
+  box-shadow: rgba(211, 211, 216, 0.2) 0px 8px 24px;
+}
+
+.cardImagesContainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.companyName{
+    width: 90px;
+    margin-right: 24px;
+}
+
+.authorName {
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  color: #18181b;
+  margin-bottom: 16px;
+}
+
+.authorReview {
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  color: #52525a;
+  line-height: 26px;
+}
+
+.card1{
+    margin-left: 200px;
+    margin-bottom: 40px;
+}
