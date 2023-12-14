@@ -1,0 +1,163 @@
+body {
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  background-image: url(../../images/challenge4/bg-image.svg);
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+header {
+  padding: 16px;
+}
+
+.logoImage {
+  margin-left: 70px;
+}
+
+.headingSubheading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.heading {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 4rem;
+  color: #ffffff;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.subheading {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 2rem;
+  font-weight: 550;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contactSection {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.2);
+  /* backdrop-filter: blur(0px); */
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 32px;
+  width: 748px;
+}
+
+.twoColumns {
+  display: flex;
+  gap: 16px;
+}
+
+.twoColumns div {
+  flex: 1;
+}
+
+.formRowSpacing {
+  padding-bottom: 24px;
+}
+
+.labelInputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 0.875rem;
+  color: #ffffff;
+  padding-bottom: 6px;
+}
+
+input {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1rem;
+  background-color: #f8fafc;
+  color: #111729;
+  border: none;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+input::placeholder {
+  color: #cdd5e0; /* Replace with your desired color code */
+}
+
+select {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #111729;
+  background-color: #f8fafc;
+  border: none;
+  border-radius: 16px;
+  padding: 24px;
+  background-image: url("../../images/challenge4/Expand_down.svg");
+  background-position: right 24px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+option {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1rem;
+  color: #111729;
+}
+
+textarea {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f8fafc;
+  color: #111729;
+  border: none;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.submitButton {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #f8fafc;
+  color: #4036a9;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  padding: 26px;
+}
+
+/* Largest devices such as laptops (1200px and down) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Medium devices such as tablets (992px and down) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Medium devices such as large phones (786px and down) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Small devices such as small phones (640px and down) */
+@media only screen and (max-width: 576px) {
+}
