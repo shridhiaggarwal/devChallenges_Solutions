@@ -70,7 +70,7 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="6">50-100 employees</textarea>
             </div>
-            <button class="submitButton" onClick="">Contact Sales</button>
+            <button class="submitButton" onClick="onSubmitClick()">Contact Sales</button>
         </form>
     </section>
 
@@ -85,6 +85,11 @@
             this.style.borderBottomRightRadius = '16px';
         });
     </script> -->
+    <script>
+        function onSubmitClick(){
+            alert("Form Submitted!");
+        }
+    </script>
 </body>
 
 </html>

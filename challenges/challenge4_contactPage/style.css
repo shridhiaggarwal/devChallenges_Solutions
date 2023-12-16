@@ -1,11 +1,7 @@
 body {
   height: 100vh;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   background-image: url(../../images/challenge4/bg-image.svg);
   background-repeat: no-repeat;
-  /* background-position: center center; */
   background-attachment: fixed;
   background-size: cover;
   color: #ffffff;
@@ -23,8 +19,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 24px;
   padding-bottom: 80px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .heading {
@@ -47,6 +45,8 @@ header {
   display: flex;
   justify-content: center;
   padding-bottom: 100px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 form {
@@ -98,6 +98,15 @@ input::placeholder {
 }
 
 select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  background-image: url("../../images/challenge4/Expand_down.svg");
+  background-position: right 24px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 1rem;
   font-weight: bold;
@@ -106,15 +115,6 @@ select {
   border: none;
   border-radius: 16px;
   padding: 24px;
-  background-image: url("../../images/challenge4/Expand_down.svg");
-  background-position: right 24px center;
-  background-repeat: no-repeat;
-  background-size: 24px;
-  outline: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  cursor: pointer;
 }
 
 option {
@@ -144,20 +144,46 @@ textarea {
   border: none;
   border-radius: 16px;
   padding: 26px;
+  cursor: pointer;
 }
 
-/* Largest devices such as laptops (1200px and down) */
-@media only screen and (max-width: 1200px) {
-}
-
-/* Medium devices such as tablets (992px and down) */
-@media only screen and (max-width: 992px) {
-}
-
-/* Medium devices such as large phones (786px and down) */
-@media only screen and (max-width: 768px) {
+/* Largest devices such as tablets (1024px and down) */
+@media only screen and (max-width: 1024px) {
+  header {
+    padding: 24px 32px;
+  }
+  .logoImage {
+    margin-left: 0px;
+  }
+  form {
+    width: 100%;
+  }
 }
 
 /* Small devices such as small phones (640px and down) */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 640px) {
+  header {
+    padding: 24px;
+  }
+  .headingSubheading {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .heading {
+    font-size: 3.5rem;
+  }
+  .subheading {
+    font-size: 1.5rem;
+  }
+  .contactSection {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .twoColumns{
+    flex-direction: column;
+    gap: 24px
+  }
+  .submitButton{
+    margin-bottom: 76px;
+  }
 }
