@@ -8,7 +8,7 @@
     <meta name="author" content="Shridhi Aggarwal">
     <meta name="description" content="devChallenges solved by Shridhi Aggarwal">
     <meta name="keywords"
-        content="Shridhi, Aggarwal, Front-End, FrontEnd, FrontEnd, Web Developer, Software Engineer, devChallenges, HTML, CSS, JavaScript, React.js">
+        content="Shridhi, Aggarwal, Front-End, FrontEnd, FrontEnd, Web Developer, Software Engineer, devChallenges, HTML, CSS, JavaScript, Contact, Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- title tag -->
@@ -31,12 +31,14 @@
     <header>
         <img class="logoImage" src="../../images/challenge4/contact-form-icon.svg" alt="logo" />
     </header>
+
     <section class="headingSubheading">
         <h1 class="heading">Interested in our <br /> business pricing?</h1>
         <h2 class="subheading">Fill out the form to view details and we’ll <br /> contact you as soon as possible.</h2>
     </section>
+
     <section class="contactSection">
-        <form>
+        <form onsubmit="onSubmitClick()">
             <div class="twoColumns formRowSpacing">
                 <div class="labelInputBox">
                     <label for="name">Name</label>
@@ -61,7 +63,7 @@
                 <div class="labelInputBox">
                     <label for="messageSubject">Subject</label>
                     <select name="messageSubject" id="messageSubject">
-                        <option value="landingPage">Building Landing pages</option>
+                        <option value="landingPage" selected>Building Landing pages</option>
                         <option value="specificFeature">Building Specific Feature</option>
                     </select>
                 </div>
@@ -70,26 +72,11 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="6">50-100 employees</textarea>
             </div>
-            <button class="submitButton" onClick="onSubmitClick()">Contact Sales</button>
+            <button class="submitButton" type="submit">Contact Sales</button>
         </form>
     </section>
 
-    <!-- <script>
-        document.getElementById('companySize').addEventListener('focus', function () {
-            this.style.borderBottomLeftRadius = '0px';
-            this.style.borderBottomRightRadius = '0px';
-        });
-
-        document.getElementById('companySize').addEventListener('change', function () {
-            this.style.borderBottomLeftRadius = '16px';
-            this.style.borderBottomRightRadius = '16px';
-        });
-    </script> -->
-    <script>
-        function onSubmitClick(){
-            alert("Form Submitted!");
-        }
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

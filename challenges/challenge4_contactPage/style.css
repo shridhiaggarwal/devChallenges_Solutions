@@ -132,6 +132,8 @@ textarea {
   border: none;
   border-radius: 16px;
   padding: 24px;
+  overflow: hidden;
+  resize: none;
 }
 
 .submitButton {
