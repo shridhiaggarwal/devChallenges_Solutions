@@ -18,6 +18,9 @@ body {
 }
 
 /* =========================== dark theme section =========================== */
+.darkThemeBody{
+  background-color: #111729 !important;
+}
 .darkThemeText {
   color: #f2f9fe !important;
 }
