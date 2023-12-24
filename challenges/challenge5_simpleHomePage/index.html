@@ -31,26 +31,29 @@
 <body>
     <header>
         <div>
-            <img class="logoImage" src="../../images/challenge5/alarado-icon-homepage.svg" alt="logo" />
+            <img id="logoImage" src="../../images/challenge5/alarado-icon-homepage.svg" alt="logo" />
         </div>
         <div>
             <nav>
-                <a href="#" class="navItem">About us</a>
+                <a href="#" class="navItem navItemActive">About us</a>
                 <a href="#" class="navItem">Product</a>
                 <a href="#" class="navItem">Resource</a>
                 <a href="#" class="navItem">Contact</a>
             </nav>
         </div>
         <div>
-            toggle button
+            <label class="themeToggle">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider"></span>
+            </label>
         </div>
     </header>
 
     <main>
         <section class="bannerSection">
             <div class="bannerLeftSide">
-                <p class="byliner">😎 Simple way to communicate</p>
-                <h1 class="heading">Actions for Accessibility in Design</h1>
+                <p class="byliner" id="bannerByliner">😎 Simple way to communicate</p>
+                <h1 class="heading" id="bannerHeading">Actions for Accessibility in Design</h1>
                 <p class="subheading">The fastest way to build and deploy websites with resusable components.</p>
                 <div>
                     <button class="commonButton">Get Started</button>
