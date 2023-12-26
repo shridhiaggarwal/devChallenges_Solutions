@@ -180,8 +180,8 @@ input:checked + .slider:before {
   color: #909193;
 }
 
-.bannerRightSide {
-}
+/* .bannerRightSide {
+} */
 
 .imageContainer{
   max-width: 550px;
@@ -216,6 +216,9 @@ input:checked + .slider:before {
 
 /* Small devices such as small phones (640px and down) */
 @media only screen and (max-width: 640px) {
+  nav{
+    display: none;
+  }
   .bannerSection{
     padding-left: 24px;
     padding-right: 24px;
