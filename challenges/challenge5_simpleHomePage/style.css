@@ -6,15 +6,22 @@ body {
 .commonButton {
   font-family: "Poppins", sans-serif;
   font-size: 1rem; /*16px*/
+  font-weight:  580;
   text-transform: uppercase;
   background-color: #2a4dd0;
   color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 32px;
 }
 
 .commonLink {
   font-family: "Poppins", sans-serif;
   font-size: 1rem; /*16px*/
+  font-weight:  580;
   color: #2a4dd0;
+  text-decoration: none;
+  border-bottom: 2px solid #2a4dd0;
 }
 
 /* =========================== dark theme section =========================== */
@@ -113,10 +120,14 @@ input:checked + .slider:before {
 /* =========================== banner section =========================== */
 .bannerSection {
   display: flex;
-  padding: 56px 72px 24px 72px;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 100px;
+  padding: 66px 72px 24px 72px;
 }
 
 .bannerLeftSide {
+  max-width: 500px;
   flex: 1;
 }
 
@@ -126,12 +137,14 @@ input:checked + .slider:before {
   font-weight: bold;
   text-transform: uppercase;
   color: #223344;
+  margin-bottom: 16px;
 }
 
 .heading {
   font-family: "Poppins", sans-serif;
   font-size: 3.75rem; /*60px*/
   color: #223344;
+  margin-bottom: 32px;
 }
 
 .subheading {
@@ -139,6 +152,26 @@ input:checked + .slider:before {
   font-size: 1.125rem; /*18px*/
   font-weight: 500;
   color: #909193;
+  margin-bottom: 24px;
+}
+
+.buttonLinkBox{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 42px;
+}
+
+.extraDetails{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.detailBox{
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .detailBox p {
@@ -148,7 +181,10 @@ input:checked + .slider:before {
 }
 
 .bannerRightSide {
-  flex: 1;
+}
+
+.imageContainer{
+  max-width: 550px;
 }
 
 .bannerRightSide img {
@@ -160,8 +196,28 @@ input:checked + .slider:before {
 
 /* Largest devices such as tablets (1024px and down) */
 @media only screen and (max-width: 1024px) {
+  header{
+    padding: 24px 32px;
+  }
+  .bannerSection{
+    flex-direction: column-reverse;
+    align-items: normal;
+    padding-bottom: 140px;
+  }
+  .bannerLeftSide{
+    max-width: 100%;
+    padding: 0 38px;
+  }
+  .bannerRightSide {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Small devices such as small phones (640px and down) */
 @media only screen and (max-width: 640px) {
+  .bannerSection{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }

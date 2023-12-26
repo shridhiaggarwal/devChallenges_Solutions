@@ -15,3 +15,6 @@ Testimoninal Page - https://devchallenges-solutions.netlify.app/challenges/chall
 
 ### Challenge 4
 Contact Page - https://devchallenges-solutions.netlify.app/challenges/challenge4_contactpage/
+
+### Challenge 5
+Contact Page - https://devchallenges-solutions.netlify.app/challenges/challenge5_simplehomepage/
