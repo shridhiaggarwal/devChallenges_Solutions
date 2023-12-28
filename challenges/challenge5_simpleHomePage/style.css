@@ -37,7 +37,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 72px;
+  padding: 32px 72px;
 }
 
 nav .navItem {
@@ -46,7 +46,7 @@ nav .navItem {
   font-weight: bold;
   color: #909193;
   text-decoration: none;
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
 nav .navItemActive {
@@ -257,7 +257,7 @@ body.sidebar-open {
   }
   #sideMenu nav .navItem{
     font-size: 3.75rem;
-    margin-left: 0px;
+    margin-right: 0px;
     white-space: nowrap;
   }
   header .themeToggle{
