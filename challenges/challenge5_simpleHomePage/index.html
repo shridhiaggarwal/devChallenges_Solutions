@@ -30,24 +30,42 @@
 
 <body>
     <header>
-        <div>
-            <img id="logoImage" src="../../images/challenge5/alarado-icon-homepage.svg" alt="logo" />
-        </div>
-        <div>
-            <nav>
-                <a href="#" class="navItem navItemActive">About us</a>
-                <a href="#" class="navItem">Product</a>
-                <a href="#" class="navItem">Resource</a>
-                <a href="#" class="navItem">Contact</a>
-            </nav>
-        </div>
+        <img id="logoImage" src="../../images/challenge5/alarado-icon-homepage.svg" alt="logo" />
+        <nav>
+            <a href="#" class="navItem navItemActive">About us</a>
+            <a href="#" class="navItem">Product</a>
+            <a href="#" class="navItem">Resource</a>
+            <a href="#" class="navItem">Contact</a>
+        </nav>
         <div>
             <label class="themeToggle">
                 <input type="checkbox" id="themeToggle">
                 <span class="slider"></span>
             </label>
         </div>
+        <div class="menuBarIcon">
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu" onClick="openMenuClick()" />
+        </div>
+
     </header>
+
+    <div id="sideMenu">
+        <div class="closeButton">
+            <img width="30" height="30" src="https://img.icons8.com/material-rounded/48/delete-sign.png" alt="delete" onclick="closeMenuClick()"/>
+        </div>
+        <nav>
+            <a href="#" class="navItem navItemActive">About us</a>
+            <a href="#" class="navItem">Product</a>
+            <a href="#" class="navItem">Resource</a>
+            <a href="#" class="navItem">Contact</a>
+        </nav>
+        <div class="sideToggleButton">
+            <label class="themeToggle">
+                <input type="checkbox" id="sideThemeToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
 
     <main>
         <section class="bannerSection">
