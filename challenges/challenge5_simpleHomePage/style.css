@@ -1,6 +1,7 @@
 body {
   height: 100vh;
   background-color: #f2f9fe;
+  user-select: none;
 }
 
 .commonButton {
@@ -13,6 +14,7 @@ body {
   border: none;
   border-radius: 12px;
   padding: 16px 32px;
+  cursor: pointer;
 }
 
 .commonLink {
@@ -22,6 +24,7 @@ body {
   color: #2a4dd0;
   text-decoration: none;
   border-bottom: 2px solid #2a4dd0;
+  cursor: pointer;
 }
 
 /* =========================== dark theme section =========================== */
@@ -271,5 +274,18 @@ body.sidebar-open {
   .bannerSection{
     padding-left: 24px;
     padding-right: 24px;
+  }
+}
+
+/* Small devices such as small phones (420px and down) */
+@media only screen and (max-width: 420px) {
+  header{
+    padding: 24px;
+  }
+  .bannerLeftSide{
+    padding: 0;
+  }
+  #bannerHeading{
+    word-break: break-word;
   }
 }
