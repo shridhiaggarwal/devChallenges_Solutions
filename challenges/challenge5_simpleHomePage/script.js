@@ -6,14 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
     let logoImage = document.getElementById("logoImage");
     let bannerByliner = document.getElementById("bannerByliner");
     let bannerHeading = document.getElementById("bannerHeading");
+    let menuBarIcon = document.querySelector('.menuBarIcon img');
+    let closeButton = document.querySelector('.closeButton img');
 
     // Set active item when opening side menu
-    document.querySelector('.menuBarIcon').addEventListener('click', () => {
+    menuBarIcon.addEventListener('click', () => {
         activeItem = document.querySelector('.sideNavItemActive');
     });
 
     // Set active item when closing side menu
-    document.querySelector('.closeButton').addEventListener('click', () => {
+    closeButton.addEventListener('click', () => {
         activeItem = document.querySelector('.navItemActive');
     });
 
@@ -25,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
         activeItem.classList.add("darkThemeText");
         bannerByliner.classList.add("darkThemeText");
         bannerHeading.classList.add("darkThemeText");
+        menuBarIcon.src = "../../images/challenge5/hamburger-menu-white.svg"
+        closeButton.src = "../../images/challenge5/close-icon-white.svg"
     }
 
     //default styleing - light theme
@@ -35,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
         activeItem.classList.remove("darkThemeText");
         bannerByliner.classList.remove("darkThemeText");
         bannerHeading.classList.remove("darkThemeText");
+        menuBarIcon.src = "../../images/challenge5/hamburger-menu-black.svg"
+        closeButton.src = "../../images/challenge5/close-icon-black.svg"
     }
 
     const handleLightDarkTheme = (checked) => {
