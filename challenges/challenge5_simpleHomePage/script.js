@@ -7,6 +7,16 @@ document.addEventListener("DOMContentLoaded", function () {
     let bannerByliner = document.getElementById("bannerByliner");
     let bannerHeading = document.getElementById("bannerHeading");
 
+    // Set active item when opening side menu
+    document.querySelector('.menuBarIcon').addEventListener('click', () => {
+        activeItem = document.querySelector('.sideNavItemActive');
+    });
+
+    // Set active item when closing side menu
+    document.querySelector('.closeButton').addEventListener('click', () => {
+        activeItem = document.querySelector('.navItemActive');
+    });
+
     // dark theme styling
     const handleDarkTheme = () => {
         document.body.classList.add("darkThemeBody");
@@ -46,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 item.classList.add("darkThemeText");
             }
             activeItem = item;
-            setInitialTheme();
         })
     })
 
