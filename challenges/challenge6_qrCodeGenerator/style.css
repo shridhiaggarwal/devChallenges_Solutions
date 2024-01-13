@@ -1,0 +1,40 @@
+body {
+  height: 100vh;
+  background-color: #f2f9fe;
+  user-select: none;
+}
+
+.commonButton {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem; /*16px*/
+  font-weight: 580;
+  text-transform: uppercase;
+  background-color: #2a4dd0;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+/* =========================== header section =========================== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 72px;
+}
+
+/* =========================== banner section =========================== */
+
+/* Largest devices such as tablets (1024px and down) */
+@media only screen and (max-width: 1024px) {
+}
+
+/* Small devices such as small phones (640px and down) */
+@media only screen and (max-width: 640px) {
+}
+
+/* Small devices such as small phones (420px and down) */
+@media only screen and (max-width: 420px) {
+}

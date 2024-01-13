@@ -60,6 +60,11 @@ main{
 
 .cardTechnology {
   color: var(--charcoal-gray);
+  padding: 0px 0px 8px 0px;
+}
+
+.cardTool {
+  color: var(--charcoal-gray);
   padding: 0px 0px 48px 0px;
 }
 
