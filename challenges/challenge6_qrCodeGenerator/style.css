@@ -7,6 +7,10 @@ body {
   background-position: right 74px top 80px;
 }
 
+main{
+  height: inherit;
+}
+
 .commonButton {
   font-family: "Outfit", sans-serif;
   font-size: 1rem; /*16px*/
@@ -23,6 +27,10 @@ body {
   height: 100%;
 }
 
+.part {
+  display: none;
+}
+
 /* =========================== header section =========================== */
 header {
   display: flex;
@@ -32,18 +40,20 @@ header {
 }
 
 /* =========================== search page =========================== */
-#searchPageMain {
+#searchPagePart {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  justify-content: center;
+  margin-top: -32px;
 }
 
-#logoImageSection{
+/* #logoImageBox{
   padding-top: 250px;
-}
+} */
 
-#searchSection {
+#searchBox {
   padding-top: 24px;
 }
 
@@ -62,13 +72,14 @@ input {
   font-family: "Outfit", sans-serif;
   font-size: 1rem; /*16px*/
   color: #F2F5F9;
+  outline-offset: 4px;
 }
 
 input::placeholder {
   color: #364153;
 }
 
-#generateQRCode {
+#generateQRButton {
   position: absolute;
   top: 1.5px;
   right: 0px;
@@ -77,6 +88,13 @@ input::placeholder {
   /* border: none;
   border-radius: 15px; */
   margin: 5px;
+}
+
+/* =========================== loader page =========================== */
+#loaderPagePart{
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 /* =========================== qr code page =========================== */

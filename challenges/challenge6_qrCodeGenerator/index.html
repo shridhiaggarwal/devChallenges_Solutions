@@ -25,18 +25,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- QRCode.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-    <main id="searchPageMain">
-        <section id="logoImageSection">
-            <img id="logoImage" src="../../images/challenge6/logo-qr-generator.svg" alt="logo" />
-        </section>
-        <section id="searchSection">
-            <div id="enterURLBox">
-                <input type="text" placeholder="Enter an url" />
-                <button class="commonButton" id="generateQRCode">QR code</button>
+    <main>
+        <section id="searchPagePart" class="part">
+            <div id="logoImageBox">
+                <img id="logoImage" src="../../images/challenge6/logo-qr-generator.svg" alt="logo" />
             </div>
+            <div id="searchBox">
+                <div id="enterURLBox">
+                    <input type="text" placeholder="Enter an url" />
+                    <button class="commonButton" id="generateQRButton">QR code</button>
+                </div>
+            </div>
+        </section>
+        <section id="loaderPagePart" class="part">
+            <img src="../../images/challenge6/Bean_Eater.svg" alt="laoding..."/>
+        </section>
+        <section id="qrCodePagePart" class="part">
+            <div id="qrcode"></div>
         </section>
     </main>
 
