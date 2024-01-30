@@ -7,24 +7,28 @@ body {
   background-position: right 74px top 80px;
 }
 
-main{
+/* main{
   height: inherit;
-}
+} */
 
 .commonButton {
   font-family: "Outfit", sans-serif;
   font-size: 1rem; /*16px*/
   background-color: #3662e3;
-  color: #F2F5F9;
+  color: #f2f5f9;
   padding: 0px 40px;
   border: none;
   border-radius: 15px;
   cursor: pointer;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
 }
 
-#logoImage {
-  width: 200px;
-  height: 100%;
+.commonButtonImage {
+  width: 24px;
+  margin-left: 12px;
+  object-fit: none;
 }
 
 .part {
@@ -34,9 +38,13 @@ main{
 /* =========================== header section =========================== */
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 32px 72px;
+  padding-top: 40px;
+  padding-left: 70px;
+}
+
+.headerLogoImage {
+  height: 30px;
+  width: 114px;
 }
 
 /* =========================== search page =========================== */
@@ -45,19 +53,24 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   margin-top: -32px;
 }
 
-/* #logoImageBox{
-  padding-top: 250px;
-} */
+.logoImageBox {
+  padding-top: 280px;
+}
+
+.logoImage {
+  width: 200px;
+  height: 100%;
+}
 
 #searchBox {
   padding-top: 24px;
 }
 
-#enterURLBox{
+#enterURLBox {
   position: relative;
 }
 
@@ -71,7 +84,7 @@ input {
   border-radius: 20px;
   font-family: "Outfit", sans-serif;
   font-size: 1rem; /*16px*/
-  color: #F2F5F9;
+  color: #f2f5f9;
   outline-offset: 4px;
 }
 
@@ -81,24 +94,52 @@ input::placeholder {
 
 #generateQRButton {
   position: absolute;
-  top: 1.5px;
+  top: 0px; /*1.5px*/
   right: 0px;
-  height: 81%;
-  padding: 0px 40px;
-  /* border: none;
-  border-radius: 15px; */
+  /* height: 81%; */
   margin: 5px;
 }
 
 /* =========================== loader page =========================== */
-#loaderPagePart{
+#loaderPagePart {
   height: 100%;
   align-items: center;
   justify-content: center;
 }
 
 /* =========================== qr code page =========================== */
+#qrCodePagePart {
+  padding-top: 96px;
+  flex-direction: column;
+  align-items: center;
+}
 
+.backgroundCircle {
+  background-color: #4e80ee33;
+  border-radius: 50%;
+  width: 310px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whiteBox {
+  background-color: #f2f5f9;
+  border-radius: 24px;
+  width: 244px;
+  height: 244px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonsBox {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 60px;
+}
 /* =========================== banner section =========================== */
 
 /* Largest devices such as tablets (1024px and down) */

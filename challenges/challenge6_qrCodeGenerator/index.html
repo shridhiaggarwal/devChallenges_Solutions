@@ -33,10 +33,14 @@
 </head>
 
 <body>
+    <header id="headerPart" class="part">
+        <img class="headerLogoImage" src="../../images/challenge6/logo-qr-generator.svg" alt="logo" />
+    </header>
+
     <main>
         <section id="searchPagePart" class="part">
-            <div id="logoImageBox">
-                <img id="logoImage" src="../../images/challenge6/logo-qr-generator.svg" alt="logo" />
+            <div class="logoImageBox">
+                <img class="logoImage" src="../../images/challenge6/logo-qr-generator.svg" alt="logo" />
             </div>
             <div id="searchBox">
                 <div id="enterURLBox">
@@ -49,7 +53,21 @@
             <img src="../../images/challenge6/Bean_Eater.svg" alt="laoding..."/>
         </section>
         <section id="qrCodePagePart" class="part">
-            <div id="qrcode"></div>
+            <div class="backgroundCircle">
+                <div class="whiteBox">
+                    <div id="qrcode"></div>
+                </div>
+            </div>
+            <div class="buttonsBox">
+                <button class="commonButton" id="downloadButton">
+                    Download
+                    <img class="commonButtonImage" src="../../images/challenge6/download.PNG" alt=""/>
+                </button>
+                <button class="commonButton" id="shareButton">
+                    Share
+                    <img class="commonButtonImage" src="../../images/challenge6/share.PNG" alt=""/>
+                </button>
+            </div>
         </section>
     </main>
 
