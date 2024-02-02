@@ -5,9 +5,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchPagePart = document.getElementById('searchPagePart');
     const loaderPagePart = document.getElementById('loaderPagePart');
     const qrCodePagePart = document.getElementById('qrCodePagePart');
+    const urlInput = document.getElementById('urlInput');
+    const logoImages = document.querySelectorAll('.logoId');
+    const downloadButton = document.getElementById('downloadButton');
+    const shareButton = document.getElementById('shareButton');
+
+    // Function to redirect at starting page
+    function redirectURL(){
+        const redirectURL = "http://127.0.0.1:5500/challenges/challenge6_qrCodeGenerator/index.html";
+         window.location.href = redirectURL;
+    }
 
     // Function to generate QR code
-    function generateQRCode() {
+    function generateQRCode(givenURL) {
         // Hide search page part - part 1
         searchPagePart.style.display = 'none';
 
@@ -17,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         // Get the data (you can replace this with your desired data)
-        const dataToEncode = "Hello, QR Code!";
+        const dataToEncode = givenURL;
 
         // Clear any existing QR code
         qrCode.innerHTML = "";
@@ -43,6 +53,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 5000);
     }
 
+    // Function to validate the entered URL
+    function validateURL() {
+        try {
+            if (!urlInput.value.trim()) {
+                alert("Error: Enter URL");
+                return;
+            }
+            let givenURL = new URL(urlInput.value.trim());
+            generateQRCode(givenURL);
+        } catch (error) {
+            alert("Error: Enter a valid URL");
+            return false; // The URL is not valid
+        }
+    }
+
     // Add a click event listener to the button
-    document.getElementById("generateQRButton").addEventListener("click", generateQRCode);
+    document.getElementById("generateQRButton").addEventListener("click", validateURL);
+    logoImages.forEach(function (logoImage) {
+        logoImage.addEventListener("click", redirectURL);
+    });
 });

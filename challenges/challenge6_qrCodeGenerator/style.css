@@ -45,6 +45,7 @@ header {
 .headerLogoImage {
   height: 30px;
   width: 114px;
+  cursor: pointer;
 }
 
 /* =========================== search page =========================== */
@@ -64,6 +65,7 @@ header {
 .logoImage {
   width: 200px;
   height: 100%;
+  cursor: pointer;
 }
 
 #searchBox {
