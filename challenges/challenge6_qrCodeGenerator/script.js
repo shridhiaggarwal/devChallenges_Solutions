@@ -8,12 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const urlInput = document.getElementById('urlInput');
     const logoImages = document.querySelectorAll('.logoId');
     const downloadButton = document.getElementById('downloadButton');
-    const shareButton = document.getElementById('shareButton');
 
     // Function to redirect at starting page
-    function redirectURL(){
+    function redirectURL() {
         const redirectURL = "http://127.0.0.1:5500/challenges/challenge6_qrCodeGenerator/index.html";
-         window.location.href = redirectURL;
+        window.location.href = redirectURL;
     }
 
     // Function to generate QR code
@@ -74,3 +73,26 @@ document.addEventListener("DOMContentLoaded", function () {
         logoImage.addEventListener("click", redirectURL);
     });
 });
+
+// Function to copy the QR Code
+function copyQRCode() {
+    if(document.hasFocus()){
+        const imgElement = document.getElementById("qrcode").querySelector("img");
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        canvas.width = imgElement.width;
+        canvas.height = imgElement.height;
+        context.drawImage(imgElement, 0, 0, imgElement.width, imgElement.height);
+        canvas.toBlob((blob) => {
+            navigator.clipboard.write([
+                new ClipboardItem({ 'image/png': blob })
+            ]).then(() => {
+                alert('QR code copied to clipboard successfully.');
+            }).catch((error) => {
+                console.error('Error copying QR code to clipboard:', error);
+            });
+        }, 'image/png');
+    } else {
+        console.error('Document is not focused. Cannot copy to clipboard.');
+    }
+}
