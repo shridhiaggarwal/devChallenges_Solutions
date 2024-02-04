@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Function to copy the QR Code
 function copyQRCode() {
-    if(document.hasFocus()){
+    if (document.hasFocus()) {
         const imgElement = document.getElementById("qrcode").querySelector("img");
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('2d');
@@ -95,4 +95,16 @@ function copyQRCode() {
     } else {
         console.error('Document is not focused. Cannot copy to clipboard.');
     }
+}
+
+// Function to download the QR Code
+function downloadQRCode() {
+    const canvas = document.querySelector('canvas');
+    const url = canvas.toDataURL('image/png');
+    let a = document.createElement('a');
+    a.href = url;
+    a.download = 'qrcode.png';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
 }

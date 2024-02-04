@@ -7,9 +7,10 @@ body {
   background-position: right 74px top 80px;
 }
 
-/* main{
+main{
   height: inherit;
-} */
+  padding: 0px 16px;
+}
 
 .commonButton {
   font-family: "Outfit", sans-serif;
@@ -77,8 +78,10 @@ header {
 }
 
 input {
-  width: 428px;
-  height: 64px;
+  width: 610px;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: 67px;
   padding-left: 30px;
   padding-right: 150px;
   background-color: #030617;
@@ -146,12 +149,42 @@ input::placeholder {
 
 /* Largest devices such as tablets (1024px and down) */
 @media only screen and (max-width: 1024px) {
+  body {
+    background-position: right 20px top 80px;
+  }
 }
 
-/* Small devices such as small phones (640px and down) */
-@media only screen and (max-width: 640px) {
+/* Small devices such as small phones (768px and down) */
+@media only screen and (max-width: 768px) {
+  body {
+    background-position: right -235px top 80px;
+  }
 }
+
+/* Small devices such as small phones (630 down) */
+@media only screen and (max-width: 630px) {
+  input {
+    /* width: 378px; */
+    width: 100%;
+    max-width: none;
+    min-width: 328px;
+    padding-left: 16px;
+  }
+}
+
+/* Small devices such as small phones (640 down) */
+/* @media only screen and (max-width: 576px) {
+  input {
+    width: 228px;
+  }
+} */
 
 /* Small devices such as small phones (420px and down) */
 @media only screen and (max-width: 420px) {
+  /* input {
+    width: 178px;
+  } */
+  .buttonsBox{
+    flex-direction: column;
+  }
 }
