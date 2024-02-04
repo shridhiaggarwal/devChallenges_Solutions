@@ -17,4 +17,7 @@ Testimoninal Page - https://devchallenges-solutions.netlify.app/challenges/chall
 Contact Page - https://devchallenges-solutions.netlify.app/challenges/challenge4_contactpage/
 
 ### Challenge 5
-Contact Page - https://devchallenges-solutions.netlify.app/challenges/challenge5_simplehomepage/
+Simple Home Page - https://devchallenges-solutions.netlify.app/challenges/challenge5_simplehomepage/
+
+### Challenge 6
+QR Code Generator - https://devchallenges-solutions.netlify.app/challenges/challenge6_qrcodegenerator/
